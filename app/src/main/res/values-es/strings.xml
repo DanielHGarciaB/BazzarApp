@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application 0</string>
+    <string name="text_Usermane">Nombre de Usuario</string>
+    <string name="text_Password">Contraseña</string>
+    <string name="text_YourPassword">Su Contraseña</string>
+    <string name="text_LOGIN">Inicio</string>
+    <string name="text_SingUp">Crear Cuenta</string>
+
+</resources>
