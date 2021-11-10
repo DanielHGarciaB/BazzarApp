@@ -45,11 +45,20 @@
             android:textColor="@color/black"
             android:layout_marginTop="40dp"
             android:textSize="45sp" />
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="45sp"
-            android:hint="@string/text_YourPassword"/>
+            android:hint="Your password"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="45sp"
+                android:background="@android:color/transparent"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
