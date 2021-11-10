@@ -4,5 +4,5 @@
     <string name="text_Password">Password</string>
     <string name="text_YourPassword">Your Password</string>
     <string name="text_LOGIN">LOGIN</string>
-    <string name="text_SingUp">Sing Up</string>
+    <string name="text_REGISTER">REGISTER</string>
 </resources>

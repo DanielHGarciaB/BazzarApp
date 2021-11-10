@@ -6,14 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="horizontal"
-    android:layout_margin="16dp">
+    >
+
 
     <LinearLayout
+        android:layout_margin="16dp"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="center">
 
         <ImageView
+            android:id="@+id/imgLogo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/logo"
@@ -22,6 +25,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_margin="16dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
@@ -35,6 +39,7 @@
             android:textColor="@color/black"
             android:textSize="22sp" />
         <EditText
+            android:id="@+id/edtUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="22sp"
@@ -49,10 +54,10 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Your password"
+            android:hint="@string/text_YourPassword"
             app:passwordToggleEnabled="true">
-
             <EditText
+                android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="29dp"
                 android:background="@android:color/transparent"
@@ -62,15 +67,19 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:onClick="onLogin"
             android:text="@string/text_LOGIN" />
         <Button
+            android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="@string/text_SingUp" />
+            android:onClick="onRegister"
+            android:text="@string/text_REGISTER" />
 
     </LinearLayout>
 

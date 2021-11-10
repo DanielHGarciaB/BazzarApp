@@ -14,6 +14,7 @@
         android:gravity="center">
 
         <ImageView
+            android:id="@+id/imgLogo"
             android:layout_width="400dp"
             android:layout_height="match_parent"
             android:src="@drawable/logo"
@@ -35,6 +36,7 @@
             android:textColor="@color/black"
             android:textSize="45sp" />
         <EditText
+            android:id="@+id/edtUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="45sp"
@@ -50,10 +52,11 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Your password"
+            android:hint="@string/text_YourPassword"
             app:passwordToggleEnabled="true">
 
             <EditText
+                android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="45sp"
@@ -62,17 +65,21 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textSize="45sp"
+            android:onClick="onLogin"
             android:text="@string/text_LOGIN" />
         <Button
+            android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textSize="45sp"
-            android:text="@string/text_SingUp" />
+            android:onClick="onRegister"
+            android:text="@string/text_REGISTER" />
 
     </LinearLayout>
 

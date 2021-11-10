@@ -4,6 +4,6 @@
     <string name="text_Password">Contraseña</string>
     <string name="text_YourPassword">Su Contraseña</string>
     <string name="text_LOGIN">Inicio</string>
-    <string name="text_SingUp">Crear Cuenta</string>
+    <string name="text_REGISTER">Crear Cuenta</string>
 
 </resources>
