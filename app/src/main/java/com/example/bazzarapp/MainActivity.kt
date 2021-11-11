@@ -12,6 +12,9 @@ class MainActivity : AppCompatActivity() {
     private var edtUsername: EditText? = null
     private var edtPassword: EditText? = null
     override fun onCreate(savedInstanceState: Bundle?) {
+        //Splash
+        //setTheme(R.style.SplashScreen)
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.main_toolbar))
@@ -19,8 +22,8 @@ class MainActivity : AppCompatActivity() {
         edtPassword = findViewById(R.id.edtPassword)
     }
     fun onLogin(botonLogin: android.view.View) {
-        var username : String = edtUsername!!.text.toString()
-        var password : String = edtPassword!!.text.toString()
+        val username : String = edtUsername!!.text.toString()
+        val password : String = edtPassword!!.text.toString()
         if (username == "lfa@mail.com" && password == "1234"){
             Toast.makeText(applicationContext,"WELCOME",Toast.LENGTH_LONG).show()
             val intento = Intent(this,HomeActivity::class.java)
@@ -29,7 +32,6 @@ class MainActivity : AppCompatActivity() {
         else{
             val dialog = AlertDialog.Builder(this).setTitle("ERROR!")
                 .setMessage("Invalid user or password").create().show()
-
         }
     }
     fun onRegister(botonRegister: android.view.View) {}
