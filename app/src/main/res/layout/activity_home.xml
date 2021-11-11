@@ -33,6 +33,11 @@
 
     </LinearLayout>
 
-
+    <Button
+        android:id="@+id/button_survey"
+        android:layout_width="168dp"
+        android:layout_height="52dp"
+        android:text="Productos"
+        android:onClick="onRecycle"/>
 
 </LinearLayout>

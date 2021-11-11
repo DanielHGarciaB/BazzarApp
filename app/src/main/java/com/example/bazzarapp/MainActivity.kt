@@ -1,12 +1,11 @@
 package com.example.bazzarapp
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
-import android.content.Intent
-import androidx.appcompat.app.AlertDialog
-import android.content.DialogInterface
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     private var edtUsername: EditText? = null
@@ -35,4 +34,5 @@ class MainActivity : AppCompatActivity() {
         }
     }
     fun onRegister(botonRegister: android.view.View) {}
+    fun onRecycle(view: android.view.View) {}
 }

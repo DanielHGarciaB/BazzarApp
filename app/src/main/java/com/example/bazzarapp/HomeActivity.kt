@@ -1,9 +1,11 @@
 package com.example.bazzarapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 
 class HomeActivity : AppCompatActivity() {
@@ -34,5 +36,10 @@ class HomeActivity : AppCompatActivity() {
             }
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    fun onRecycle(view: View){
+        val intent = Intent(this,CatalogoActivity::class.java);
+        startActivity(intent)
     }
 }
