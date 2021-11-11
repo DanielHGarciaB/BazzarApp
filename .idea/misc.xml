@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/JulianYunda/Cursos/MISION_TIC/Ciclo_4/Programas/BazzarApp/app/src/main/res/drawable/customborder.xml" value="0.40546875" />
         <entry key="..\:/JulianYunda/Cursos/MISION_TIC/Ciclo_4/Programas/BazzarApp/app/src/main/res/layout-land/activity_main.xml" value="0.264" />
-        <entry key="..\:/JulianYunda/Cursos/MISION_TIC/Ciclo_4/Programas/BazzarApp/app/src/main/res/layout-sw600dp-land/activity_main.xml" value="0.4" />
-        <entry key="..\:/JulianYunda/Cursos/MISION_TIC/Ciclo_4/Programas/BazzarApp/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.39765625" />
-        <entry key="..\:/JulianYunda/Cursos/MISION_TIC/Ciclo_4/Programas/BazzarApp/app/src/main/res/layout-sw720dp-land/activity_main.xml" value="0.32503192848020435" />
-        <entry key="..\:/JulianYunda/Cursos/MISION_TIC/Ciclo_4/Programas/BazzarApp/app/src/main/res/layout-sw720dp/activity_main.xml" value="0.24853515625" />
-        <entry key="..\:/JulianYunda/Cursos/MISION_TIC/Ciclo_4/Programas/BazzarApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/JulianYunda/Cursos/MISION_TIC/Ciclo_4/Programas/BazzarApp/app/src/main/res/layout-sw600dp-land/activity_main.xml" value="0.264" />
+        <entry key="..\:/JulianYunda/Cursos/MISION_TIC/Ciclo_4/Programas/BazzarApp/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.264" />
+        <entry key="..\:/JulianYunda/Cursos/MISION_TIC/Ciclo_4/Programas/BazzarApp/app/src/main/res/layout-sw720dp-land/activity_main.xml" value="0.264" />
+        <entry key="..\:/JulianYunda/Cursos/MISION_TIC/Ciclo_4/Programas/BazzarApp/app/src/main/res/layout-sw720dp/activity_main.xml" value="0.2" />
+        <entry key="..\:/JulianYunda/Cursos/MISION_TIC/Ciclo_4/Programas/BazzarApp/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/JulianYunda/Cursos/MISION_TIC/Ciclo_4/Programas/BazzarApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BazzarApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BazzarApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BazzarApp/app/src/main/res/layout-land/activity_main.xml" value="0.1728395061728395" />

@@ -14,14 +14,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setSupportActionBar(findViewById(R.id.my_toolbar))
         edtUsername = findViewById(R.id.edtUsername)
         edtPassword = findViewById(R.id.edtPassword)
     }
     fun onLogin(botonLogin: android.view.View) {
         var username : String = edtUsername!!.text.toString()
         var password : String = edtPassword!!.text.toString()
-        if (username == "lfa@email.com" && password == "1234"){
-            Toast.makeText(applicationContext,"WElCOME",Toast.LENGTH_LONG).show()
+        if (username == "lfa@mail.com" && password == "1234"){
+            Toast.makeText(applicationContext,"WELCOME",Toast.LENGTH_LONG).show()
+            val intento = Intent(this,HomeActivity::class.java)
+            startActivity(intento)
         }
         else{
             val dialog = AlertDialog.Builder(this).setTitle("ERROR!")
