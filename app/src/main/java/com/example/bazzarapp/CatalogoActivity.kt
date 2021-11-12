@@ -16,9 +16,9 @@ class CatalogoActivity : AppCompatActivity() {
         recycleView = findViewById(R.id.reclycler);
 
         val list = listOf(
-            item("@drawable/logo","Chaqueta","Texto 1"),
-            item("@drawable/logo","Pantalaon","Texto 2"),
-            item("@drawable/logo","Tenis","Texto 3"));
+            item(R.drawable.chaqueta,"Chaqueta","Texto 1"),
+            item(R.drawable.pantalon,"Pantalon","Texto 2"),
+            item(R.drawable.tenis,"Tenis","Texto 3"));
 
         var adapter = Adapter(list);
         recycleView!!.setHasFixedSize(true);

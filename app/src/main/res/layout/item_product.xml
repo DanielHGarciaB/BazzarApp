@@ -12,7 +12,7 @@
         android:id="@+id/imagenItem"
         android:layout_width="100dp"
         android:layout_height="90dp"
-        android:src="@drawable/logo" />
+        android:src="@drawable/chaqueta" />
 
     <LinearLayout
         android:layout_width="match_parent"
