@@ -33,6 +33,9 @@ class MainActivity : AppCompatActivity() {
                 .setMessage("Invalid user or password").create().show()
         }
     }
-    fun onRegister(botonRegister: android.view.View) {}
+    fun onRegister(botonRegister: android.view.View) {
+            val registerIntent = Intent(this, RegisterActivity::class.java)
+            startActivity(registerIntent)
+    }
     fun onRecycle(view: android.view.View) {}
 }

@@ -30,8 +30,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Title"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             <TextView
                 android:id="@+id/textItem"
@@ -39,9 +38,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Prueba"
-                android:textSize="20dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                />
+                android:textSize="20dp" />
 
         </LinearLayout>
 
