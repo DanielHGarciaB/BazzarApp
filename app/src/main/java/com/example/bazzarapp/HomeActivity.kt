@@ -8,6 +8,12 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 
+enum class ProviderType{
+    BASIC,
+    GOOGLE,
+    FACEBOOK
+}
+
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

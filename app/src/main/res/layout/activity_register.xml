@@ -60,6 +60,10 @@
                     android:inputType="textCapSentences" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -80,6 +84,10 @@
                     android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
                     android:inputType="textCapSentences" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -102,6 +110,10 @@
                     android:inputType="phone" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -121,6 +133,10 @@
                     android:background="@android:color/transparent"
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -142,6 +158,10 @@
                     android:background="@android:color/transparent"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"

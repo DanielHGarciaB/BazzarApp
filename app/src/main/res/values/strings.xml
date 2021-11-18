@@ -5,4 +5,10 @@
     <string name="text_YourPassword">Your Password</string>
     <string name="text_LOGIN">LOGIN</string>
     <string name="text_REGISTER">Create New Account</string>
+    <string name="test_welcome">Welcome</string>
+    <string name="test_login">Login</string>
+    <string name="test_TermsLink">Terms and conditions</string>
+    <string name="test_TermsMessage">Accept all policies, security and terms when registering.</string>
+    <string name="test_ok">Accept</string>
+    <string name="test_cancel">Cancel</string>
 </resources>

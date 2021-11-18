@@ -1,8 +1,12 @@
 package com.example.bazzarapp
 
+import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.Switch
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
@@ -49,7 +53,6 @@ class RegisterActivity : AppCompatActivity() {
         if (Validation(username,password,password2,name,lastname,mobile,terms)) {
 
             //Save Auth
-                /*
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(username, password)
                 .addOnCompleteListener {
                     if (it.isSuccessful) {
@@ -65,9 +68,6 @@ class RegisterActivity : AppCompatActivity() {
                         getToast("Failed to authenticate");
                     }
                 }
-
-                 */
-
         }else{
             /*
             getToast("Validate Error");
@@ -209,5 +209,50 @@ class RegisterActivity : AppCompatActivity() {
         }
 
         return validation;
+    }
+
+    private fun showHome(username: String, provider: ProviderType) {
+
+        val homeIntent = Intent(this, HomeActivity::class.java).apply {
+            putExtra("email", username)
+            putExtra("provider", provider.toString())
+        }
+
+        startActivity(homeIntent)
+
+        getToast(resources.getString(R.string.test_welcome));
+    }
+
+    private fun getToast(message: String) {
+        Toast.makeText(
+            applicationContext,
+            message,
+            Toast.LENGTH_SHORT
+        ).show();
+    }
+
+    fun onReturnLogin(view: android.view.View) {
+        val loginIntent = Intent(this, MainActivity::class.java)
+        startActivity(loginIntent)
+        getToast(resources.getString(R.string.test_login));
+    }
+
+    fun onTerms(view: android.view.View) {
+
+        AlertDialog.Builder(this)
+            .setTitle(resources.getString(R.string.test_TermsLink))
+            .setMessage(resources.getString(R.string.test_TermsMessage))
+            .setPositiveButton(resources.getString(R.string.test_ok),positiveButton)
+            .setNegativeButton(resources.getString(R.string.test_cancel),negativeButton)
+            .create().show();
+
+    }
+
+    val positiveButton={ _: DialogInterface, _:Int->
+        stTerms!!.setChecked(true);
+    }
+
+    val negativeButton={ _: DialogInterface, _:Int->
+        stTerms!!.setChecked(false);
     }
 }
