@@ -69,9 +69,7 @@ class RegisterActivity : AppCompatActivity() {
                     }
                 }
         }else{
-            /*
             getToast("Validate Error");
-             */
         }
 
     }
