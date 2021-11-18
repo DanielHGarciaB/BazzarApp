@@ -13,6 +13,7 @@ class RegisterActivity : AppCompatActivity() {
 
     private var editUserName: EditText? = null
     private var editPassword: EditText? = null
+    private var editPassword2: EditText? = null
     private var editName: EditText? = null
     private var editLastName: EditText? = null
     private var editMobile: EditText? = null
@@ -26,6 +27,7 @@ class RegisterActivity : AppCompatActivity() {
 
         editUserName = findViewById(R.id.editEmail);
         editPassword = findViewById(R.id.editPassword);
+        editPassword2 = findViewById(R.id.editPassword2);
         editName = findViewById(R.id.editName);
         editLastName = findViewById(R.id.editLastName);
         editMobile = findViewById(R.id.editMobile);
@@ -38,12 +40,13 @@ class RegisterActivity : AppCompatActivity() {
 
         var username = editUserName!!.text.toString();
         var password = editPassword!!.text.toString();
+        var password2 = editPassword2!!.text.toString();
         var name = editName!!.text.toString();
         var lastname = editLastName!!.text.toString();
         var mobile = editMobile!!.text.toString();
         var terms = stTerms!!.isChecked;
 
-        if (Validation(username, password,name,lastname,mobile,terms)) {
+        if (Validation(username,password,password2,name,lastname,mobile,terms)) {
 
             //Save Auth
                 /*
@@ -73,7 +76,7 @@ class RegisterActivity : AppCompatActivity() {
 
     }
 
-    private fun Validation(username: String, password: String, name: String, lastname: String, mobile: String, terms: Boolean): Boolean {
+    private fun Validation(username: String, password: String, password2: String, name: String, lastname: String, mobile: String, terms: Boolean): Boolean {
         //Reset
         editUserName!!.setBackground(resources.getDrawable(R.drawable.customborderok))
         var editUserNameLayout = findViewById<TextInputLayout>( R.id.editNameLayout)
@@ -82,6 +85,10 @@ class RegisterActivity : AppCompatActivity() {
         editPassword!!.setBackground(resources.getDrawable(R.drawable.customborderok))
         var editPasswordLayout = findViewById<TextInputLayout>( R.id.editPasswordLayout)
         editPasswordLayout!!.setHint("Your Pasword")
+
+        editPassword2!!.setBackground(resources.getDrawable(R.drawable.customborderok))
+        var editPasswordLayout2 = findViewById<TextInputLayout>( R.id.editPasswordLayout2)
+        editPasswordLayout2!!.setHint("Confirm Your Pasword")
 
         editName!!.setBackground(resources.getDrawable(R.drawable.customborderok))
         var editNameLayout = findViewById<TextInputLayout>( R.id.editNameLayout)
@@ -131,6 +138,14 @@ class RegisterActivity : AppCompatActivity() {
         }
 
         //Validate Password
+
+        if (password2.isEmpty()) {
+            editPasswordLayout2!!.setHint("Empty Confirm Password")
+            editPassword2!!.setBackground(resources.getDrawable(R.drawable.custombordererror))
+            validation=false
+
+        }
+
         if (password.isEmpty()) {
             editPasswordLayout!!.setHint("Empty Password")
             editPassword!!.setBackground(resources.getDrawable(R.drawable.custombordererror))
@@ -165,6 +180,14 @@ class RegisterActivity : AppCompatActivity() {
                                 editPasswordLayout!!.setHint("At least one character")
                                 editPassword!!.setBackground(resources.getDrawable(R.drawable.custombordererror))
                                 validation=false
+                            }else{
+                                if (password!=password2){
+                                    editPasswordLayout!!.setHint("Passwords do not match")
+                                    editPassword!!.setBackground(resources.getDrawable(R.drawable.custombordererror))
+                                    editPasswordLayout2!!.setHint("Passwords do not match")
+                                    editPassword2!!.setBackground(resources.getDrawable(R.drawable.custombordererror))
+                                    validation=false
+                                }
                             }
                         }
                     }
