@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "66776147575-4kkm5c0a5to14h8imm6gvrrhl39koef0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bazzarapp",
+            "certificate_hash": "fc8854d3c7f6b62365b9c5b19037bb82117a9704"
+          }
+        },
+        {
           "client_id": "66776147575-6rghksd8qlo15n2mkf2j2fsvjptjm68e.apps.googleusercontent.com",
           "client_type": 3
         }

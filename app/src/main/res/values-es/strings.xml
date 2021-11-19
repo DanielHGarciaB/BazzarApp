@@ -11,4 +11,6 @@
     <string name="test_TermsMessage">Acepte todas las políticas, seguridad y términos al registrarse.</string>
     <string name="test_ok">Aceptar</string>
     <string name="test_cancel">Cancelar</string>
+    <string name="default_web_client_id2" translatable="false">1017434080370-slqfef8v4jf8i7ks6dd1gp1ibhsp3ac3.apps.googleusercontent.com</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
