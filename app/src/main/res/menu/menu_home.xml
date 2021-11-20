@@ -9,6 +9,12 @@
         android:icon="@android:drawable/ic_menu_preferences"
         android:orderInCategory="5"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_logout"
+        android:title="Cerrar Sesion"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="5"
+        app:showAsAction="never"/>
 
     <item
         android:title="Buscar"
